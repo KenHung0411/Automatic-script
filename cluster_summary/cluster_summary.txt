@@ -1,0 +1,393 @@
+# python good.py -s 172.18.78.227 -u root -p T3r1yaki?
+Getting Base ...
+	Born         : 2017-05-08 10:44:33.155196+00:00
+	Datacenter   : lgcdc
+	Status       : gray
+	Cluster      : lgc
+	Status       : green
+	CPU Cores    : 200
+	Cpu(MHz)     : 431760
+	CpuUse(MHz)  : 10483
+	Mem(GB)      : 4095
+	MemUse(GB)   : 78
+Getting Alarms ...
+	Target      : lgcvdpb
+	Status      : red
+	Time        : 2017-06-01 08:23:43.723736+00:00
+	Text        : VDP: [004] The VDP appliance datastore is approaching maximum capacity
+	Description : The datastore where the vSphere Data Protection appliance provisioned its disks is approaching maximum capacity. When the maximum capacity is reached, the appliance will be suspended and cannot be resumed until additional space is made available.
+Getting Hosts ...
+	 Name,	 State,	Mem(GB),	MemUse(GB),	CpuSoc,	CpuCorsSoc,	CpuUse(MHz),	TotMHz,	UpTime(d),
+	 lgcesxi15.lgc.netact.tcc.net,	poweredOn,	1023,	127,	4,	40,	2699,	79920,	70
+	 lgcesxi14.lgc.netact.tcc.net,	poweredOn,	1023,	285,	4,	40,	1444,	79920,	70
+	 lgcesxi13.lgc.netact.tcc.net,	poweredOn,	1023,	111,	4,	40,	3435,	79920,	70
+	 lgcesxi12.lgc.netact.tcc.net,	poweredOn,	511,	69,	4,	40,	1549,	96000,	70
+	 lgcesxi11.lgc.netact.tcc.net,	poweredOn,	511,	68,	4,	40,	1474,	96000,	70
+Getting VMs ...
+	 Name,	State,	Mem(MB),	MemUse(MB),	Cpu#,	CpuUse(MHz),	UpTime(d),
+	 lgcvm89,	poweredOn,	16384,	163,	12,	96,	68
+	 lgcvm69,	poweredOn,	16384,	655,	16,	192,	68
+	 lgcvm11,	poweredOn,	32768,	0,	12,	144,	68
+	 lgcvm6,	poweredOn,	4096,	942,	1,	192,	68
+	 lgcvm3,	poweredOn,	4096,	163,	1,	72,	62
+	 lgcvm99,	poweredOn,	8192,	327,	8,	72,	68
+	 lgcvm14,	poweredOn,	32768,	327,	12,	120,	68
+	 lgcvm7,	poweredOn,	4096,	1024,	1,	216,	62
+	 lgcvm68,	poweredOn,	16384,	655,	16,	168,	68
+	 lgcvm10,	poweredOn,	8192,	245,	4,	144,	68
+	 lgcvm12,	poweredOn,	32768,	0,	12,	99,	60
+	 lgcvm67,	poweredOn,	16384,	983,	16,	199,	60
+	 lgcvm88,	poweredOn,	16384,	0,	12,	79,	68
+	 lgcvm78,	poweredOn,	16384,	163,	12,	79,	68
+	 lgcvm8,	poweredOn,	6144,	245,	2,	159,	62
+	 lgcvm9,	poweredOn,	12288,	245,	8,	179,	68
+	 lgcvm44,	poweredOn,	32768,	0,	12,	119,	68
+	 lgcvcenterb,	poweredOn,	8192,	3031,	4,	1278,	70
+	 lgcvm82,	poweredOn,	8192,	81,	6,	39,	68
+	 lgcvm47,	poweredOn,	32768,	0,	12,	39,	68
+	 lgcvm4,	poweredOn,	262144,	7864,	32,	879,	62
+	 lgcvm66,	poweredOn,	16384,	327,	16,	319,	60
+	 lgcvm13,	poweredOn,	32768,	0,	12,	119,	61
+	 lgcasb,	poweredOn,	4096,	0,	4,	0,	61
+	 lgcvm83,	poweredOn,	8192,	81,	6,	59,	68
+	 lgcvm81,	poweredOn,	8192,	81,	6,	59,	68
+	 lgcvm45,	poweredOn,	32768,	0,	12,	99,	68
+	 lgcvm77,	poweredOn,	16384,	0,	12,	79,	68
+	 lgcvm5,	poweredOn,	8192,	409,	3,	119,	62
+	 lgcvm46,	poweredOn,	32768,	0,	12,	99,	68
+	 lgcvdpb,	poweredOn,	16384,	2293,	8,	139,	61
+Getting VMs running on Hosts ...
+	Host name : lgcesxi15.lgc.netact.tcc.net
+	VMs running on host :
+		lgcvm66
+		lgcvm13
+		lgcasb
+		lgcvm83
+		lgcvm81
+		lgcvm45
+		lgcvm77
+		lgcvm5
+		lgcvm46
+		lgcvdpb
+	Host name : lgcesxi14.lgc.netact.tcc.net
+	VMs running on host :
+		lgcvm82
+		lgcvm47
+		lgcvm4
+	Host name : lgcesxi13.lgc.netact.tcc.net
+	VMs running on host :
+		lgcvm12
+		lgcvm67
+		lgcvm88
+		lgcvm78
+		lgcvm8
+		lgcvm9
+		lgcvm44
+		lgcvcenterb
+	Host name : lgcesxi12.lgc.netact.tcc.net
+	VMs running on host :
+		lgcvm99
+		lgcvm14
+		lgcvm7
+		lgcvm68
+		lgcvm10
+	Host name : lgcesxi11.lgc.netact.tcc.net
+	VMs running on host :
+		lgcvm89
+		lgcvm69
+		lgcvm11
+		lgcvm6
+		lgcvm3
+Getting Cluster rules ...
+	 Name,	Type,	VMGroup,\AffinetHostGroup,	AntiAffinetHostGroup#,	Enabled,
+	Unify PM backend-2,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm69
+		lgcvm68
+	Unify PM backend-1,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm67
+		lgcvm66
+	Unify was-2,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm14
+		lgcvm13
+	Unify was-1,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm12
+		lgcvm11
+	common-mediations,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm10
+		lgcvm9
+	dns-m and dns-s,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm7
+		lgcvm3
+	ldap-1 and ldap-2,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm5
+		lgcvm3
+	LB-2 and Unify WAS-1,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm11
+		lgcvm7
+	LB-1 and LB-2,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm7
+		lgcvm6
+	isdk-1 & isdk-2,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm88
+		lgcvm89
+	mvicm-1 & mvicm-2,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm82
+		lgcvm83
+	mvi-1 & mvi-2,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm77
+		lgcvm78
+	spm-3 & spm-4,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm46
+		lgcvm47
+	tp-1 & tp-2,	AntiAffinityRule,	,	,	,	True
+		VMs in the rule :
+		lgcvm44
+		lgcvm45
+	DB_HighPerformanceHost,	VmHostRule,	DB_VM,	DB_HOSTS,	None,	True
+Getting Cluster groups ...
+	Group name : DRS_VMS
+		VMs in the group :
+		lgcvm3
+		lgcvm4
+		lgcvm5
+		lgcvm6
+		lgcvm7
+		lgcvm8
+		lgcvm9
+		lgcvm10
+		lgcvm11
+		lgcvm12
+		lgcvm13
+		lgcvm14
+		lgcvm66
+		lgcvm67
+		lgcvm68
+		lgcvm69
+	Group name : DRS_HOSTS
+		Hosts in the group :
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+	Group name : DB_HOSTS
+		Hosts in the group :
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+	Group name : DB_VM
+		VMs in the group :
+		lgcvm4
+Getting Datastores ...
+	 Name,	Sie(GB),	Used(GB),	Free(GB),	Status,
+	 lgcesxi15-local-storage-1,	12,	1,	11,	green
+		Hosts mounted :
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+	 lgcesxi14-local-storage-1,	12,	1,	11,	green
+		Hosts mounted :
+		lgcesxi14.lgc.netact.tcc.net
+		VMs mounted :
+	 lgcesxi13-local-storage-1,	12,	1,	11,	green
+		Hosts mounted :
+		lgcesxi13.lgc.netact.tcc.net
+		VMs mounted :
+	 lgcesxi12-local-storage-1,	12,	6,	6,	green
+		Hosts mounted :
+		lgcesxi12.lgc.netact.tcc.net
+		VMs mounted :
+	 lgcesxi11-local-storage-1,	12,	6,	6,	green
+		Hosts mounted :
+		lgcesxi11.lgc.netact.tcc.net
+		VMs mounted :
+	 VMGuestDisk1,	899,	758,	141,	green
+		Hosts mounted :
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		lgcesxi13.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm13
+		lgcvm83
+		lgcvm66
+		lgcvm45
+		lgcvm12
+		lgcvm81
+		lgcvm8
+		lgcvm3
+		lgcvm44
+		lgcvcenterb
+	 MVIDatastore,	99,	91,	8,	green
+		Hosts mounted :
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm78
+		lgcvm77
+	 PMDatastore,	199,	181,	18,	green
+		Hosts mounted :
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm69
+		lgcvm68
+		lgcvm67
+		lgcvm66
+	 Backup,	39999,	39275,	724,	green
+		Hosts mounted :
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm5
+		lgcasb
+		lgcvm4
+		lgcvdpb
+	 NFSGlobal1,	399,	361,	38,	green
+		Hosts mounted :
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm5
+	 NFSGlobal,	399,	361,	38,	green
+		Hosts mounted :
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm5
+	 DBData3,	8191,	8029,	162,	green
+		Hosts mounted :
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm4
+	 DBData2,	2047,	2008,	39,	green
+		Hosts mounted :
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm4
+	 DBData1,	16383,	16057,	326,	green
+		Hosts mounted :
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm4
+	 DBData,	1535,	1506,	29,	green
+		Hosts mounted :
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm4
+	 DBRedo1,	299,	271,	28,	green
+		Hosts mounted :
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm4
+	 DBRedo,	299,	271,	28,	green
+		Hosts mounted :
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm4
+	 DBArch1,	2999,	2701,	298,	green
+		Hosts mounted :
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm4
+	 DBArch,	2999,	2701,	298,	green
+		Hosts mounted :
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm4
+	 VMGuestDisk3,	949,	709,	240,	green
+		Hosts mounted :
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm46
+		lgcvm82
+		lgcvm68
+		lgcvm11
+		lgcvm10
+		lgcvm78
+		lgcvm9
+		lgcvm7
+		lgcvm69
+		lgcvm14
+		lgcvm6
+		lgcvm47
+		lgcvm5
+	 VMGuestDisk2,	899,	824,	75,	green
+		Hosts mounted :
+		lgcesxi12.lgc.netact.tcc.net
+		lgcesxi11.lgc.netact.tcc.net
+		lgcesxi14.lgc.netact.tcc.net
+		lgcesxi13.lgc.netact.tcc.net
+		lgcesxi15.lgc.netact.tcc.net
+		VMs mounted :
+		lgcvm99
+		lgcvm88
+		lgcvm67
+		lgcvm89
+		lgcvm77
+		lgcvm4
+# 
